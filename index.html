@@ -6,14 +6,317 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Untitled</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
 
-    
+    <nav class="navbar navbar-light navbar-expand-md nav-header">
+        <div class="container-fluid"><a class="navbar-brand" href="#"><img class="navbar-logo" src="assets/img/20220101091406_20211101065008_logo-VinFast-01.jpg" style="padding-bottom: 10px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><a class="nav-vn" href="#" style="color: var(--gray);">VN</a><i class="fa fa-angle-down nav-vn-icon"></i><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="color: rgba(0, 0, 0, 0.5);"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ml-auto header-ul">
+                    <li class="nav-item header-item-1">
+                        <div class="subnav-div-icon" style="margin: 0px;margin-bottom: 10px;cursor: pointer;"><a class="active" href="#" style="margin-top: 9px;">Ô tô</a>
+                            <div class="subnav-icon">
+                               <div class="icon-down-1"><i class="fa fa-angle-down" style="margin: 6px 0 0 0;"></i></div>
+                               <div class="icon-up-1 disabled"><i class="fa fa-angle-up" style="margin: 6px 0 0 0;"></i></div>
+                            </div>
+                            <!-- <div class="subnav-icon icon-up disabled"><i class="fa fa-angle-up" style="margin: 6px 0 0 0;display: none;"></i></div> -->
+                        </div>
+                        <ul class="navbar-nav subnav-1" style="box-shadow: 0px 5px 5px 1px #cad0d6;">
+                            <li class="nav-item subnav-item">
+                                <div class="subnav-support" style="text-align: right;border-bottom: 1px solid #cad0d7 ;"><a class="active text-right" href="#" style="color: var(--gray-dark);"><i class="fa fa-wechat"></i>&nbsp; Yêu cầu tư vấn</a></div>
+                                <div class="container">
+                                    <div class="row subnav-row">
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div style="text-align: center;"><img src="assets/img/VF8_1642740322.png">
+                                                        <h4>VF 8</h4>
+                                                        <p>Từ 1.057.100.000 vnđ</p><a class="active" href="#">Xem chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div style="text-align: center;"><img src="assets/img/VF9_1642740346.png">
+                                                        <h4>VF 9</h4>
+                                                        <p>Từ 1.443.200.000 vnđ</p><a class="active" href="#">Xem chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <p><br>Chính sách bán hàng có thể được cập nhật theo chính sách của VinFast tại từng thời điểm<br></p><button class="btn btn-primary subnav-btn-car" type="button" style="text-align: center;">Xem tất cả các xe</button>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item subnav-1-mobile" style="margin: 0px;color: var(--gray-dark);">
+                                <div class="subnav-1-mobile-1">
+                                    <h1 style="font-size: 20px;">Động cơ Điện</h1>
+                                    <div><a class="active" href="#">VF 8</a><a href="#">VF 9</a><a href="#">VF e34</a></div>
+                                    <h1 style="font-size: 20px;">Động cơ xăng</h1>
+                                    <div><a class="active" href="#">Fadil</a><a href="#">Lux A2.0</a><a href="#">Lux SA2.0</a><a href="#">President</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item header-item-2">
+                        <div class="subnav-div-icon"><a href="#" style="margin-bottom: 10px;margin-top: 9px;cursor: pointer">Xe máy điện</a>
+                            <div class="subnav-icon">
+                               <div class="icon-down-2"><i class="fa fa-angle-down" style="margin: 6px 0 0 0;"></i></div>
+                               <div class="icon-up-2 disabled"><i class="fa fa-angle-up" style="margin: 6px 0 0 0;"></i></div>
+                            </div>
+                        </div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item subnav-2" style="box-shadow: 0px 5px 5px 1px #cad0d6;">
+                                <div style="text-align: right;margin: 10px 0 10px 0;">
+                                    <div style="border-bottom: 1px solid #cad0d6;padding-bottom: 10px;"><i class="fa fa-wechat"></i><a class="active text-right" href="#" style="color: var(--gray-dark);">&nbsp;Yêu cầu tư vấn</a></div>
+                                    <div class="container">
+                                        <div class="row subnav-row">
+                                            <div class="col-md-4 subnav-row-col" style="text-align: center;">
+                                                <div class="card subnav-card" style="border-color: var(--white);">
+                                                    <div class="card-body" style="text-align: center;"><img src="assets/img/FELIZS_megamenu.jpg">
+                                                        <h4 class="card-title">Feliz S</h4>
+                                                        <p class="card-text">Từ 29.900.000</p><a class="card-link" href="#">Xem chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 subnav-row-col" style="text-align: center;">
+                                                <div class="card">
+                                                    <div class="card-body" style="text-align: center;"><img src="assets/img/KLARAS_megamenu.jpg">
+                                                        <h4 class="card-title">Klara S</h4>
+                                                        <p class="card-text">Từ 39.900.000</p><a class="card-link" href="#">Xem chi tiết</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <p><br>Chính sách bán hàng có thể được cập nhật theo chính sách của VinFast tại từng thời điểm<br></p><button class="btn btn-primary" type="button" style="width: 425px;">Xem tất cả các xe</button>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item subnav-1-mobile subnav-2-mobile " style="margin: 0px;color: var(--gray-dark);">
+                                <div class="subnav-1-mobile-1">
+                                    <h1 style="font-size: 20px;">Dòng cao cấp</h1>
+                                    <div><a class="active" href="#">Theon</a><a href="#">Vento</a></div>
+                                    <h1 style="font-size: 20px;">Dòng trung cấp</h1>
+                                    <div><a class="active" href="#">Fediz</a><a href="#">Klara S</a><a href="#">Klara A2</a></div>
+                                    <h1 style="font-size: 20px;">Dòng phổ thông</h1>
+                                    <div><a class="active" href="#">Tempest</a><a href="#">Impes</a><a href="#">Ludo</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item header-item-3" style="border-color: var(--gray-dark);color: var(--gray);"><a class="nav-link" href="#">Ưu đãi</a></li>
+                    <li class="nav-item header-item-4">
+                        <div class="subnav-div-icon"><a href="#" style="margin-bottom: 10px;margin-top: 9px;cursor: pointer;">DỊch vụ</a>
+                            <div class="subnav-icon">
+                                <div class="icon-down-3"><i class="fa fa-angle-down" style="margin: 6px 0 0 0;"></i></div>
+                                <div class="icon-up-3 disabled"><i class="fa fa-angle-up" style="margin: 6px 0 0 0;"></i></div>
+                            </div>
+                        </div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item subnav-3">
+                                <div class="row" style="margin-left: 40px;margin-right: 20px;margin-top: 20px;margin-bottom: 20px;text-align: left;">
+                                    <div class="col-3 subnav-3-col">
+                                        <h1 style="font-size: 18px;margin-bottom: 25px;">Bảo hành &amp; Dịch vụ</h1>
+                                        <p>Bảo hành</p>
+                                        <p>Bảo dưỡng định kỳ</p>
+                                        <p>Dịch vụ sửa chữa</p>
+                                    </div>
+                                    <div class="col-3 subnav-3-col">
+                                        <h1 style="font-size: 18px;margin-bottom: 20px;">Đặt lịch sửa chữa &amp; Bảo Dưỡng</h1>
+                                        <p>Ô tô</p>
+                                    </div>
+                                    <div class="col-3 subnav-3-col">
+                                        <h1 style="font-size: 18px;margin-bottom: 20px;">Tài liệu tải về</h1>
+                                        <p>Ô tô</p>
+                                        <p>Xe máy điện</p>
+                                    </div>
+                                    <div class="col-3 subnav-3-col" style="margin-left: -90px;"><img src="assets/img/mega-dichvu.png"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item subnav-1-mobile subnav-3-mobile" style="margin: 0px;color: var(--gray-dark);">
+                                <div class="subnav-1-mobile-1">
+                                    <h1 style="font-size: 20px;">Bảo hành &amp; Dịch vụ</h1>
+                                    <div><a class="active" href="#">Bảo hành</a><a href="#">Bảo dưỡng định kỳ</a><a href="#">Dịch vụ sửa chữa</a></div>
+                                    <h1 style="font-size: 20px;">Đặt lịch sửa chữa và bảo dưỡng</h1>
+                                    <div><a class="active" href="#">Ô tô</a></div>
+                                    <h1 style="font-size: 20px;">Tài liệu tải về</h1>
+                                    <div><a class="active" href="#">Ô tô</a><a href="#">Xe máy điện</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item header-item-5">
+                        <div class="subnav-div-icon"><a href="#" style="margin-bottom: 10px;margin-top: 9px;cursor: pointer;">Công cụ</a>
+                            <div class="subnav-icon">
+                                <div class="icon-down-4"><i class="fa fa-angle-down" style="margin: 6px 0 0 0;"></i></div>
+                                <div class="icon-up-4 disabled"><i class="fa fa-angle-up" style="margin: 6px 0 0 0;"></i></div>
+                             </div>
+                        </div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item subnav-4" style="box-shadow: 0px 5px 5px 1px #cad0d6;">
+                                <div class="row" style="margin: 20px 20px;margin-bottom: 10px;">
+                                    <div class="col-3">
+                                        <div class="subnav-4-div">
+                                            <div class="subnav-4-div-link"><a class="active" href="#">Chi phí lăn bánh</a></div>
+                                            <div class="subnav-4-div-link"><a class="active" href="#">So sánh xe</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="subnav-4-div">
+                                            <div class="subnav-4-div-link"><a class="active" href="#">Thẩm định vay</a></div>
+                                            <div class="subnav-4-div-link"><a class="active" href="#">Dự toán trả góp</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="subnav-4-div">
+                                            <div class="subnav-4-div-link"><a class="active" href="#">Đặt lại dịch vụ</a></div>
+                                            <div class="subnav-4-div-link"><a class="active" href="#">Đăng kí lái thử</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3"><img src="assets/img/mega-congcu.png" style="margin-left: -20px;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item subnav-1-mobile subnav-4-mobile" style="margin: 0px;color: var(--gray-dark);">
+                                <div class="subnav-1-mobile-1">
+                                    <div><a class="active" href="#">Chi phí lăn bánh</a><a href="#">Thẩm định vay</a><a href="#">Dự toán trả góp</a></div>
+                                    <div><a class="active" href="#">Đặt lịch dịch vụ</a></div>
+                                    <div><a class="active" href="#">So sánh xe</a><a href="#">Đăng ký lái thử</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item header-item-6"><a class="nav-link link-underline" href="#">VN&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="navbar-nav">
+                            <li class="nav-item subnav-5" style="box-shadow: 0px 5px 5px 1px #cad0d6;">
+                                <div class="row" style="margin: 30px 20px 0 100px;">
+                                    <div class="col-4">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1 style="font-size: 20px;">Bắc Mỹ</h1>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="subnav-5-div">
+                                                    <p style="font-size: 17px;"><br><strong>United States</strong><br></p>
+                                                    <p>English</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="subnav-5-div">
+                                                    <p><br><strong>Canada</strong><br></p>
+                                                    <p>English Francais</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1 style="font-size: 20px;">Châu Âu</h1>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="subnav-5-div">
+                                                    <p style="font-size: 17px;"><br><strong>France</strong><br></p>
+                                                    <p>Francais</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="subnav-5-div">
+                                                    <p><br><strong>Deutschland</strong><br></p>
+                                                    <p>English Francais</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="subnav-5-div">
+                                                    <p><br><strong>Nederland</strong><br></p>
+                                                    <p>Nederlands</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="subnav-5-div">
+                                                    <p><br><strong>Others</strong><br></p>
+                                                    <p>English</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1 style="font-size: 20px;">Châu Á</h1>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <div class="subnav-5-div">
+                                                    <p><br><strong>Việt Nam</strong><br></p><a class="active" href="#" style="margin: -1px;margin-right: 10px;">Tiếng Việt&nbsp;</a><a href="#">English</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item header-item-7"><button class="btn btn-account" type="button">Tài khoản</button></li>
+                    <li class="nav-item header-item-8"><i class="fa fa-bars nav-li-icon"></i>
+                        <ul class="navbar-nav subnav-7" style="box-shadow: -6px 7px 10px 0px #cad0d6;">
+                            <li class="nav-item subnav-menu" style="margin: 10px 0 10px 14px;text-align: left;"><a class="nav-link active" href="#" style="padding: 8px;filter: blur(0px);">Hệ thông Showrom và Đại lý&nbsp;</a><a class="nav-link" href="#" style="padding: 8px;">Đối tác trạm sạc</a><a class="nav-link" href="#" style="padding: 8px;">Hệ sinh thái pin và trạm sạc</a><a class="nav-link" href="#" style="padding: 8px;">Hệ sinh thái pin và trạm sạc</a><a class="nav-link" href="#" style="padding: 8px;">Tin tức</a><a class="nav-link" href="#" style="padding: 8px;">câu hỏi thường gặp&nbsp;</a><a class="nav-link" href="#" style="padding: 8px;">Liên hệ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item header-nav-none"><a class="nav-link" href="#">Đối tác trạm sạc</a></li>
+                    <li class="nav-item header-nav-none"><a class="nav-link" href="#">Hệ sinh thái pin và trạm sạc</a></li>
+                    <li class="nav-item header-nav-none"><a class="nav-link" href="#">Tin tức</a></li>
+                    <li class="nav-item header-nav-none"><a class="nav-link" href="#">Câu hỏi thường gặp</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="simple-slider" style="margin-top: 88px">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background: url(&quot;assets/img/EVN-Tragop-0D.jpg&quot;) center center / cover no-repeat;"></div>
+                    <div class="swiper-slide" style="background: url(&quot;assets/img/banner-thexanh-VN.png&quot;) center center / cover no-repeat;"></div>
+                    <div class="swiper-slide" style="background: url(&quot;assets/img/bike-deposit-desktop.png&quot;) center center / cover no-repeat;"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
+    </div>
+
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
+    <script src="assets/js/responsiveevent.js"></script>
 </body>
 
 </html>
