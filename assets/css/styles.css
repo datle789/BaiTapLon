@@ -426,3 +426,11 @@ body {
   opacity: 1;
   width: 100%;
 }
+
+
+.simple-slider .swiper-slide{
+  height:auto;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center;
+}
