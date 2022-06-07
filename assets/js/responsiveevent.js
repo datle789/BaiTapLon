@@ -1,6 +1,7 @@
 const subnavMobile1 = document.querySelector(".subnav-1-mobile")
 const iconDown1 = document.querySelector(".icon-down-1")
 const iconUp1 = document.querySelector(".icon-up-1")
+const subnavIcon=document.querySelector(".subnav-div-icon")
 
 iconDown1.addEventListener("click",()=>{
     iconDown1.classList.add('disabled')
@@ -13,6 +14,7 @@ iconUp1.addEventListener("click", () =>{
     iconUp1.classList.add('disabled')
     subnavMobile1.classList.remove('open')
 })
+
 
 
 
