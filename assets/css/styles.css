@@ -434,3 +434,31 @@ body {
   background-size:cover;
   background-position:center;
 }
+
+.body1-1 {
+  text-align: center;
+}
+
+.body1-1-border {
+  text-align: center;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+@media (max-width: 767px) {
+  .body1-1-border {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.div-price-newproduct .div-button-newproduct {
+  width: 100%;
+}
+
+.card-border-none {
+  border: none;
+}
+
