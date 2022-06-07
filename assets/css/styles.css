@@ -675,3 +675,129 @@ body {
 .container.part-policy {
   margin-top: 80px;
 }
+
+
+.div-buy-online {
+  height: 475px;
+  width: 100%;
+  background: url('../../assets/img/car-blue.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+@media (max-width: 760px) {
+  .div-buy-online {
+    height: 1250px;
+  }
+}
+
+.row.row-icon-step {
+  background: #fff;
+}
+
+.div-icon-step {
+}
+
+.div-buy-heading h1 {
+  font-weight: 200;
+  color: #fff;
+}
+
+.div-icon-step {
+  margin-right: 250px;
+  margin-left: 250px;
+  margin-bottom: auto;
+}
+
+@media (max-width: 1050px) {
+  .div-icon-step {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: auto;
+  }
+}
+
+.div-step-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.div-step-1-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.fa.fa-chevron-right {
+  font-size: 20px;
+  color: blue;
+}
+
+@media (max-width: 766px) {
+  .fa.fa-chevron-right {
+    display: none;
+  }
+}
+
+.container.div-row-step {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.div-icon-down {
+  margin: 20px;
+  color: var(--blue);
+  font-size: 20px;
+  display: none;
+}
+
+@media (max-width: 766px) {
+  .div-icon-down {
+    display: block;
+  }
+}
+
+.div-step-1-title p {
+  font-weight: 500;
+}
+
+.instruction {
+  margin-top: 50px;
+}
+
+.list-instruction {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+@media (max-width: 766px) {
+  .list-instruction {
+    border-bottom: 3px solid #2c72c6!important;
+  }
+}
+
+.list-instruction-li {
+  border-bottom: 3px solid #2c72c6!important;
+}
+
+@media (max-width: 766px) {
+  .list-instruction-li {
+    border-bottom: none !important;
+  }
+}
+
+.list-instruction-li a {
+  padding: 50px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.img-instruction {
+  width: 300px;
+}
