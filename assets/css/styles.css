@@ -1,3 +1,45 @@
+.div-symbol-icon {
+  background: #fff;
+  padding: 5px;
+  margin: 5px 0 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.div-symbol-icon img {
+  width: 24px;
+}
+
+.div-small-icon {
+  float: right;
+  margin-top: 150px;
+  position: fixed;
+  z-index: 99;
+}
+
+.div-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.div-symbol-icon-menu {
+  background: rgb(20, 100, 244);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.div-symbol-icon-menu i {
+  color: #fff;
+}
+
+@media (max-width: 991px){
+  .div-right{
+    display: none;
+  }
+}
+
+
 .navbar-logo {
   height: 62px;
   padding: 0 0 0 50px;
