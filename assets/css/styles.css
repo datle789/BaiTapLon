@@ -839,3 +839,14 @@
 .img-instruction {
   width: 300px;
 }
+
+.img-trainghiem {
+  width: 726px;
+}
+
+@media (max-width: 766px) {
+  .img-trainghiem {
+    width: 100%;
+  }
+}
+
