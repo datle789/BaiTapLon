@@ -6,3 +6,20 @@
     margin-top:90px;
     text-align: center;
 }
+
+.success {
+    margin-top: 200px;
+  }
+  
+  .fa.fa-check-circle {
+    color: green;
+  }
+  
+  .form-link a {
+    text-decoration: none;
+    color: #707070;
+  }
+  
+  .form-success {
+    border: none;
+  }
