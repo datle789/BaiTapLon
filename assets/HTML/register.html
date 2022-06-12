@@ -6,16 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-    <link rel="stylesheet" href="../../assets/css/Simple-Slider.css">
-    <link rel="stylesheet" href="../../assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="./css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -28,7 +23,7 @@
                         <div class="subnav-div-icon" style="margin: 0px;margin-bottom: 10px;cursor: pointer;"><a class="active" href="#" style="margin-top: 9px;">Ô tô</a>
                             <div class="subnav-icon">
                                <div class="icon-down-1"><i class="fa fa-angle-down" style="margin: 6px 0 0 0;"></i></div>
-                               <div class="icon-up-1 disabled"><i class="fa fa-angle-up" style="margin: 6px 0 0 0;"></i></div>
+                               <div class="icon-up-1 disable"><i class="fa fa-angle-up" style="margin: 6px 0 0 0;"></i></div>
                             </div>
                             <!-- <div class="subnav-icon icon-up disabled"><i class="fa fa-angle-up" style="margin: 6px 0 0 0;display: none;"></i></div> -->
                         </div>
@@ -80,7 +75,7 @@
                         <div class="subnav-div-icon"><a href="#" style="margin-bottom: 10px;margin-top: 9px;cursor: pointer">Xe máy điện</a>
                             <div class="subnav-icon">
                                <div class="icon-down-2"><i class="fa fa-angle-down" style="margin: 6px 0 0 0;"></i></div>
-                               <div class="icon-up-2 disabled"><i class="fa fa-angle-up" style="margin: 6px 0 0 0;"></i></div>
+                               <div class="icon-up-2 disable"><i class="fa fa-angle-up" style="margin: 6px 0 0 0;"></i></div>
                             </div>
                         </div>
                         <ul class="navbar-nav">
@@ -131,7 +126,7 @@
                         <div class="subnav-div-icon"><a href="#" style="margin-bottom: 10px;margin-top: 9px;cursor: pointer;">DỊch vụ</a>
                             <div class="subnav-icon">
                                 <div class="icon-down-3"><i class="fa fa-angle-down" style="margin: 6px 0 0 0;"></i></div>
-                                <div class="icon-up-3 disabled"><i class="fa fa-angle-up" style="margin: 6px 0 0 0;"></i></div>
+                                <div class="icon-up-3 disable"><i class="fa fa-angle-up" style="margin: 6px 0 0 0;"></i></div>
                             </div>
                         </div>
                         <ul class="navbar-nav">
@@ -173,7 +168,7 @@
                         <div class="subnav-div-icon"><a href="#" style="margin-bottom: 10px;margin-top: 9px;cursor: pointer;">Công cụ</a>
                             <div class="subnav-icon">
                                 <div class="icon-down-4"><i class="fa fa-angle-down" style="margin: 6px 0 0 0;"></i></div>
-                                <div class="icon-up-4 disabled"><i class="fa fa-angle-up" style="margin: 6px 0 0 0;"></i></div>
+                                <div class="icon-up-4 disable"><i class="fa fa-angle-up" style="margin: 6px 0 0 0;"></i></div>
                              </div>
                         </div>
                         <ul class="navbar-nav">
@@ -305,6 +300,36 @@
     </nav>
 
 
+    <div class="container form-register">
+
+        <section class="login-dark">
+            <div class="form-header" style="color: #000;font-weight: 500;">
+                <h1>Đăng ký tài khoản</h1>
+            </div>
+            <form method="post">
+                <div class="form-group"><input class="form-control" pattern="[a-zA-Z]+" type="text" placeholder="Họ và Tên"></div>
+                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+                <div class="form-group"><input class="form-control" type="password" placeholder="Mật khẩu"></div>
+                <div class="form-group"><input class="form-control" type="password" placeholder="Nhập lại mật khẩu"></div>
+                <div class="form-group">
+                    <p><br><br>Bằng việc bấm nút Đăng ký bên dưới, tôi xác nhận đã đọc, hiểu và đồng ý với các&nbsp;<a href="https://shop.vinfastauto.com/vn_vi/dieu-khoan-phap-ly.html"><span style="text-decoration: underline;">Điều kiện và Điều khoản</span></a>&nbsp;của VinFast.<br><br></p>
+                </div>
+                <div class="form-group">
+                    <div style="display:flex;">
+                        <input class="check-box" type="checkbox" style="margin-top: 56px;margin-right: 10px;"/>
+                        <p><br>Đăng ký nhận thông tin chương trình khuyến mãi, dịch vụ từ VinFast<br></p>
+                    </div>
+                </div>
+                <div class="form-group"><a class="btn btn-primary btn-block btn-register disabled" style="width:100%;" href="#">&nbsp;Đăng kí</a></div>
+                <a class="forgot" href="#">Đã có tài khoản?</a>
+                <div class="form-group"><a class="btn btn-primary btn-block" style="width:100%;" href="#">&nbsp;Đăng nhập</a></div>
+            </form>
+        </section>
+
+        
+    </div>
+
+
 
     <script src="../../assets/js/jquery.min.js"></script>
     <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
@@ -315,7 +340,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="../../assets/js/Simple-Slider.js"></script>
     <script src="../../assets/js/responsiveevent.js"></script>
-    <script src="../../assets/js/style.js"></script>
+    <script src="./js/style.js"></script>
 </body>
 
 </html>
