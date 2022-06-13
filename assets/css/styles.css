@@ -850,3 +850,10 @@
   }
 }
 
+@media (max-width: 992px) {
+  .footer-col {
+    display: table;
+  }
+}
+
+
