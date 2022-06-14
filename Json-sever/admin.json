@@ -1,0 +1,65 @@
+{
+  "car": [
+    {
+      "name": "KLARA S - Xanh lục",
+      "price": "39.900.000",
+      "distance": "120km",
+      "image": "klaras.png",
+      "address": "klaras-xanhluc.html",
+      "id": 7
+    },
+    {
+      "name": "FELIZ - ĐỎ",
+      "price": "24.900.000",
+      "distance": "90km",
+      "image": "feliz.png",
+      "address": "feliz-do.html",
+      "id": 8
+    },
+    {
+      "name": "KLARA A2 - 2011",
+      "price": "26.900.000",
+      "distance": "90km",
+      "image": "bike-klara-a2.jpg",
+      "address": "klaraa2-2011.html",
+      "id": 9
+    },
+    {
+      "name": "IMPES - Xanh đậm",
+      "price": "14.900.000",
+      "distance": "70km",
+      "image": "impres-blue.jpg",
+      "address": "impes-xanhdam.html",
+      "id": 10
+    }
+  ],
+  "users": [
+    {
+      "name": "van a",
+      "email": "vana@gmail.com",
+      "password": "789",
+      "address": "HN",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "văn b",
+      "email": "vanb@gmail.com",
+      "password": "vanb",
+      "address": "NĐ"
+    },
+    {
+      "name": "van c",
+      "email": "vanc@gmail.com",
+      "password": "789",
+      "address": "QN",
+      "id": 3
+    },
+    {
+      "name": "Nguyễn van a",
+      "email": "nguyen789@gmail.com",
+      "password": "789",
+      "id": 4
+    }
+  ]
+}

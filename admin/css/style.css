@@ -1,0 +1,82 @@
+.div-header-1 {
+  line-height: 50px;
+}
+
+.div-header-1 p {
+  display: inline-block;
+  margin-right: 70px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.fa.fa-user-times {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.div-header-2 {
+  line-height: 50px;
+}
+
+.div-header-2 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.fa.fa-envelope-o {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.fa.fa-bell-o {
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+.col-3.col-left {
+}
+
+.body-icon {
+  margin-top: 30px;
+}
+
+.fa.fa-user-circle {
+  font-size: 50px;
+}
+
+.text-center.div-link-item {
+  padding: 20px;
+  width: 100%;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+
+.text-center.div-link-item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.text-center.div-link-item:hover {
+  background: aqua;
+}
+
+.col-right-icon {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.text-input {
+  display: flex;
+  margin: 20px;
+}
+
+.text-input p {
+  margin-right: 30px;
+}
+  
+.image{
+  width: 100px;
+}
+
