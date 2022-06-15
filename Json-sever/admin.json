@@ -66,6 +66,7 @@
       "id": 4
     },
     {
+<<<<<<< HEAD
       "name": "",
       "email": "",
       "password": "",
@@ -76,6 +77,12 @@
       "email": "abc@gmail.com",
       "password": "abc",
       "id": 6
+=======
+      "name": "lmao",
+      "email": "lmao@gmail.com",
+      "password": "lmao",
+      "id": 5
+>>>>>>> origin/develop
     }
   ]
 }
