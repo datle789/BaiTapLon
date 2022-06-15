@@ -561,7 +561,6 @@
   padding: 40px 0;
   font-size: 1.25em;
   text-align: center;
-  pointer-events: none;
 }
 
 .slick-slide .desc {

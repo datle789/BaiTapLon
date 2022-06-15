@@ -60,6 +60,12 @@
       "email": "nguyen789@gmail.com",
       "password": "789",
       "id": 4
+    },
+    {
+      "name": "lmao",
+      "email": "lmao@gmail.com",
+      "password": "lmao",
+      "id": 5
     }
   ]
 }

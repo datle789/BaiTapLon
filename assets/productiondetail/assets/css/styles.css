@@ -1,0 +1,22 @@
+.btn.btn-primary {
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .row-2 {
+    margin-top: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .row-1 background {
+    height: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Feliz-red-img {
+    width: 100%;
+  }
+}
+
