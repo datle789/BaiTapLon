@@ -6,7 +6,7 @@
       "distance": "120km",
       "image": "klaras.png",
       "address": "klaras.html",
-      "details":"detail-klaras.html",
+      "details": "detail-klaras.html",
       "id": 7
     },
     {
@@ -15,7 +15,7 @@
       "distance": "90km",
       "image": "feliz.png",
       "address": "feliz.html",
-      "details":"detail-feliz.html",
+      "details": "detail-feliz.html",
       "id": 8
     },
     {
@@ -24,7 +24,7 @@
       "distance": "90km",
       "image": "bike-klara-a2.jpg",
       "address": "klara-a2-2011.html",
-      "details":"detail-klaraa2-2011.html",
+      "details": "detail-klaraa2-2011.html",
       "id": 9
     },
     {
@@ -33,8 +33,28 @@
       "distance": "70km",
       "image": "impres-blue.jpg",
       "address": "impes.html",
-      "details":"detail-impes.html",
+      "details": "detail-impes.html",
       "id": 10
+    }
+  ],
+  "newcard": [
+    {
+      "id": 1,
+      "name": "KLARA S (2022)",
+      "price": "36.900.000 VNĐ",
+      "distance": "194 km",
+      "image": "bike-klara-s-2022.jpg",
+      "address": "klaras-2022.html",
+      "details": "detail-klaras-2022.html"
+    },
+    {
+      "id": 2,
+      "name": "FELIZ S",
+      "price": "29.900.000 VNĐ",
+      "distance": "198 km",
+      "image": "bike-feliz-s.jpg",
+      "address": "feliz-s.html",
+      "details": "detail-feliz-s.html"
     }
   ],
   "users": [
@@ -64,18 +84,6 @@
       "email": "nguyen789@gmail.com",
       "password": "789",
       "id": 4
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 5
-    },
-    {
-      "name": "abc",
-      "email": "abc@gmail.com",
-      "password": "abc",
-      "id": 6
     }
   ]
 }

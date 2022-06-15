@@ -13,7 +13,7 @@
 
 <body>
 
-    <div style="background: rgb(64, 232, 168);">
+    <div style="background: rgb(176, 232, 64);">
         <div class="container">
             <nav class="navbar navbar-light navbar-expand-md">
                 <div class="container-fluid"><a class="navbar-brand" style="color: #fff;" href="#">ADMIN PANEL</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -36,11 +36,13 @@
             <div class="text-center div-link-item"><a href="./users.html">Users</a></div>
         </div>
         <div class="col col-right">
+
             <div style="text-align: center;">
-                <h1>Danh sách người dùng</h1>
+                <h1>Sản phẩm mới</h1>
 
             </div>
-            <!-- <div class="card" style="border:none; text-align: center;">
+
+            <div class="card" style="border:none;text-align: center;">
                 <div class="card-body">
                     <div class="row">
                         <div class="col-4">
@@ -50,15 +52,21 @@
                     </div>
                     <div class="row">
                         <div class="col-4">
-                            <p>Email :</p>
+                            <p>Price :</p>
                         </div>
-                        <div class="col-8"><input type="text" name="email"></div>
+                        <div class="col-8"><input type="text" name="price"></div>
                     </div>
                     <div class="row">
                         <div class="col-4">
-                            <p>Password :</p>
+                            <p>Image :</p>
                         </div>
-                        <div class="col-8"><input type="text" name="password"></div>
+                        <div class="col-8"><input type="text" name="image"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <p>Distance :</p>
+                        </div>
+                        <div class="col-8"><input type="text" name="distance"></div>
                     </div>
                     <div class="row">
                         <div class="col-4">
@@ -66,13 +74,18 @@
                         </div>
                         <div class="col-8"><input type="text" name="address"></div>
                     </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <p>Details :</p>
+                        </div>
+                        <div class="col-8"><input type="text" name="details"></div>
+                    </div>
                 </div>
             </div>
 
             <div style="text-align:center">
-                <a id="add" class="btn btn-primary" style="width:50%;margin-bottom: 50px;">Add</a>
-            </div> -->
-           
+                <button id="create" class="btn btn-primary" style="width:50%;margin-bottom: 50px;">Create</button>
+            </div>
 
             <div class="div-table">
                 <table class="table">
@@ -80,8 +93,11 @@
                         <tr>
                             <th scope="col">STT</th>
                             <th scope="col">Name</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Password</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Distance</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Details</th>
                             <th scope="col">Delete</th>
                             <th scope="col">Fix</th>
                         </tr>
@@ -91,6 +107,7 @@
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
+                            <td>@mdo</td>
                             <td>@mdo</td>
                             <td>@mdo</td>
                             <td><button>xóa</button></td>
@@ -125,7 +142,8 @@
 
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="./js/users.js"></script>
+
+    <script src="./js/newcar.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,27 @@
             { "name": "IMPES - Đỏ", "price": "14.900.000", "img": "./assets/img/impes-red.jpg", "distance": "70km","address":"./assets/buyProduce/impes-do.html","details":"./assets/productiondetail/detail-impes.html" },
             { "name": "KLARA S - Đen", "price": "39.900.000", "img": "./assets/img/klara-s-black.jpg", "distance": "120km","address":"./assets/buyProduce/klaras-den.html","details":"./assets/productiondetail/detail-klaras.html" },
         ]
+    
+    "newcard": [
+    {
+      "id": 1,
+      "name": "KLARA S (2022)",
+      "price": "36.900.000 VNĐ",
+      "distance": "194 km",
+      "image": "bike-klara-s-2022.jpg",
+      "address": "klaras-2022.html",
+      "details": "detail-klaras-2022.html"
+    },
+    {
+      "id": 2,
+      "name": "FELIZ S",
+      "price": "29.900.000 VNĐ",
+      "distance": "198 km",
+      "image": "bike-feliz-s.jpg",
+      "address": "feliz-s.html",
+      "details": "detail-feliz-s.html"
+    }
+  ],
 
 }
 
@@ -61,11 +82,13 @@ main.cars.forEach((car) => {
 }) */
 
 var carApi = 'http://localhost:3000/car';
+var newcar = 'http://localhost:3000/newcard'
 
 
 function start() {
     
     getcar(renderhtml)
+    getnewcar(rendernewcar)
 }
 
 start();
@@ -127,6 +150,76 @@ function renderhtml(cars){
 
 }
 
+
+
+
+function getnewcar(callback) {
+    fetch(newcar)
+        .then(response => response.json())
+        .then(callback)
+}
+
+
+function rendernewcar(cars) {
+    const heading = document.querySelector('.newcar');
+
+    console.log(cars)
+    let htmls = cars.map((car) =>
+        `
+        <div class="card card-border-none" style="margin-right:10px">
+        <img class="card-img-top w-100 d-block" src="./assets/img/${car.image}" />
+    <div class="card-body">
+        <div class="row">
+            <div class="col-6"><label class="col-form-label"><strong>${car.name}</strong><br></label>
+            </div>
+            <div class="col-6">
+                <div class="div-price-newproduct" style="text-align: right;"><label
+                        style="margin-top: 5px;color:#007bff;"><strong>${car.price}&nbsp;VNĐ</strong><br></label>
+                </div>
+            </div>
+        </div>
+        <p class="card-text" style="font-size: 12px;">Giá đã bao gồm VAT, 01 bộ sạc, không bao gồm
+            pin<br></p>
+        <hr>
+        <div class="row">
+            <div class="col-6"><label class="col-form-label"><strong>Ưu đãi</strong><br></label></div>
+            <div class="col-6">
+                <div class="div-price-newproduct" style="text-align: right;"><label
+                        style="margin-top: 5px;"><strong>Trả góp lãi suất 0%</strong><br></label></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6"><label class="col-form-label"><strong>Quãng đường</strong><br></label>
+            </div>
+            <div class="col-6">
+                <div class="div-price-newproduct" style="text-align: right;"><label
+                        style="margin-top: 5px;"><strong>lên tới ${car.distance}/ 1 lần sạc</strong><br></label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div style="padding-top: 10px;"><a href="./assets/productiondetail/${car.details}"
+                        style="font-weight: bold; text-decoration: none">XEM CHI TIẾT</a></div>
+            </div>
+            <div class="col-6">
+                <div class="div-price-newproduct" style="text-align: center;">
+
+                    <!-- create a like button -->
+                    <a href="./assets/buyProduce/${car.address}" class=" btn-primary div-button-newproduct" type="button"
+                        style="margin-top: 5px;padding: 5px;text-decoration: none;">MUA NGAY</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+        `
+    )
+
+    heading.innerHTML = htmls.join('')
+}
 
 
 
