@@ -5,8 +5,8 @@
       "price": "39.900.000",
       "distance": "120km",
       "image": "klaras.png",
-      "address": "klaras-xanhluc.html",
-      "details":"detail-klaras-xanhluc.html",
+      "address": "klaras.html",
+      "details":"detail-klaras.html",
       "id": 7
     },
     {
@@ -14,8 +14,8 @@
       "price": "24.900.000",
       "distance": "90km",
       "image": "feliz.png",
-      "address": "feliz-do.html",
-      "details":"detail-feliz-do.html",
+      "address": "feliz.html",
+      "details":"detail-feliz.html",
       "id": 8
     },
     {
@@ -23,7 +23,7 @@
       "price": "26.900.000",
       "distance": "90km",
       "image": "bike-klara-a2.jpg",
-      "address": "klaraa2-2011.html",
+      "address": "klara-a2-2011.html",
       "details":"detail-klaraa2-2011.html",
       "id": 9
     },
@@ -32,8 +32,8 @@
       "price": "14.900.000",
       "distance": "70km",
       "image": "impres-blue.jpg",
-      "address": "impes-xanhdam.html",
-      "details":"detail-impes-xanhdam.html",
+      "address": "impes.html",
+      "details":"detail-impes.html",
       "id": 10
     }
   ],
@@ -66,7 +66,6 @@
       "id": 4
     },
     {
-<<<<<<< HEAD
       "name": "",
       "email": "",
       "password": "",
@@ -77,12 +76,6 @@
       "email": "abc@gmail.com",
       "password": "abc",
       "id": 6
-=======
-      "name": "lmao",
-      "email": "lmao@gmail.com",
-      "password": "lmao",
-      "id": 5
->>>>>>> origin/develop
     }
   ]
 }
