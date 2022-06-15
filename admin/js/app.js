@@ -66,13 +66,15 @@ function handlefixcar(id) {
     var distance = document.querySelector('input[name="distance"]').value;
     var image = document.querySelector('input[name="image"]').value;
     var address = document.querySelector('input[name="address"]').value;
+    var details = document.querySelector('input[name="details"]').value;
 
     var form = {
         name: name,
         price: price,
         distance: distance,
         image: image,
-        address: address
+        address: address,
+        details: details
     }
     fixcar(form, id)
 
@@ -93,6 +95,7 @@ function render(cars) {
         <td><img class="image" src="../assets/img/${car.image}"></td>
         <td>${car.distance}</td>
         <td><a href="../assets/buyProduce/${car.address}">${car.address}</a></td>
+        <td><a href="../assets/productiondetail/${car.details}">${car.details}</a></td>
         <td><button onclick="handledeletecar(${car.id})">xóa</button></td>
         <td><button onclick="handlefixcar(${car.id})">sửa</button></td>
     </tr>
@@ -114,13 +117,14 @@ function handlecreate() {
         var distance = document.querySelector('input[name="distance"]').value;
         var image = document.querySelector('input[name="image"]').value;
         var address = document.querySelector('input[name="address"]').value;
-
+        var details = document.querySelector('input[name="details"]').value;
         var form = {
             name: name,
             price: price,
             distance: distance,
             image: image,
-            address: address
+            address: address,
+            details: details
         }
 
         createcar(form, () => getcar(render))

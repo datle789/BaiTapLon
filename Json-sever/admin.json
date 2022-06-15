@@ -6,6 +6,7 @@
       "distance": "120km",
       "image": "klaras.png",
       "address": "klaras-xanhluc.html",
+      "details":"detail-klaras-xanhluc.html",
       "id": 7
     },
     {
@@ -14,6 +15,7 @@
       "distance": "90km",
       "image": "feliz.png",
       "address": "feliz-do.html",
+      "details":"detail-feliz-do.html",
       "id": 8
     },
     {
@@ -22,6 +24,7 @@
       "distance": "90km",
       "image": "bike-klara-a2.jpg",
       "address": "klaraa2-2011.html",
+      "details":"detail-klaraa2-2011.html",
       "id": 9
     },
     {
@@ -30,6 +33,7 @@
       "distance": "70km",
       "image": "impres-blue.jpg",
       "address": "impes-xanhdam.html",
+      "details":"detail-impes-xanhdam.html",
       "id": 10
     }
   ],
@@ -60,6 +64,18 @@
       "email": "nguyen789@gmail.com",
       "password": "789",
       "id": 4
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "password": "abc",
+      "id": 6
     }
   ]
 }

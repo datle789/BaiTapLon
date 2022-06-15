@@ -103,6 +103,13 @@ function handlecreate() {
         var name = document.querySelector('input[name="name"]').value;
         var email = document.querySelector('input[name="email"]').value;
         var password = document.querySelector('input[name="password"]').value;
+
+        if(name === "" || email === "" || password === ""){
+            alert("Please enter")
+        }else{
+            add.href ="./form-success.html"
+        }
+
         var form = {
             name: name,
             email: email,
