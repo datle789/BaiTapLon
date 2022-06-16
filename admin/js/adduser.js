@@ -4,7 +4,7 @@ var carApi = 'http://localhost:3000/users';
 function start() {
     getcar(render)
 
-    handlecreate()
+    adduser();
     
 }
 
@@ -98,18 +98,13 @@ function render(cars) {
 
 
 
-function handlecreate() {
-    const createbtn = document.querySelector('#add');
+function adduser() {
+    const createbtn = document.querySelector('#add-user');
+    console.log(createbtn);
     createbtn.onclick = () => {
         var name = document.querySelector('input[name="name"]').value;
         var email = document.querySelector('input[name="email"]').value;
         var password = document.querySelector('input[name="password"]').value;
-
-        if(name === "" || email === "" || password === ""){
-            alert("Please enter")
-        }else{
-            add.href ="./form-success.html"
-        }
 
         var form = {
             name: name,

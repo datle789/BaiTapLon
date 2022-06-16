@@ -73,15 +73,14 @@
       "address": "NĐ"
     },
     {
-      "name": "van c",
-      "email": "vanc@gmail.com",
+      "name": "abc",
+      "email": "nguyena@gmail.com",
       "password": "789",
-      "address": "QN",
       "id": 3
     },
     {
-      "name": "Nguyễn van a",
-      "email": "nguyen789@gmail.com",
+      "name": "nguyen b",
+      "email": "nguyenb@gmail.com",
       "password": "789",
       "id": 4
     }
