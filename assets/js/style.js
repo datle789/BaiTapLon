@@ -17,8 +17,8 @@
       "price": "36.900.000 VNĐ",
       "distance": "194 km",
       "image": "bike-klara-s-2022.jpg",
-      "address": "klaras-2022.html",
-      "details": "detail-klaras-2022.html"
+      "address": "klaras.html",
+      "details": "detail-klaras.html"
     },
     {
       "id": 2,
