@@ -16,10 +16,14 @@
     <link rel="stylesheet" href="../../assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="../../assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="../css/styles.css">
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-form-simple.css">
+    <link rel="stylesheet" href="assets/css/feliz-styles.css">
 </head>
 
 <body>
-
+    <!--NavBar-->
     <nav class="navbar navbar-light navbar-expand-md nav-header">
         <div class="container-fluid"><a class="navbar-brand" href="#"><img class="navbar-logo" src="../../assets/img/20220101091406_20211101065008_logo-VinFast-01.jpg" style="padding-bottom: 10px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><a class="nav-vn" href="#" style="color: var(--gray);">VN</a><i class="fa fa-angle-down nav-vn-icon"></i><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="color: rgba(0, 0, 0, 0.5);"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
@@ -305,6 +309,79 @@
     </nav>
 
 
+    <!--buy-form-->
+    <div class="row" style="margin-top: 100px;">
+        <div class="col" style="background: #d4d7da;min-width: 50%;">
+            <div style="text-align: center;"><label style="color: var(--light);letter-spacing: 25px;font-size: 24px;"><br>FELIZ<br></label></div><img src="assets/img/BAQ.png" name="product-img" style="width: 100%;max-height: 880px;">
+        </div>
+        <div class="col" style="min-width: 512px;font-size: 14px;">
+            <form style="margin-top: 10px;">
+                <div>
+                    <fieldset>
+                        <legend style="font-size: 14px;"><strong>Chọn màu xe</strong><br></legend>
+                        <div class="custom-control custom-radio custom-control-inline"><input type="radio" id="RadioBlack" class="custom-control-input" name="color" checked="" value="Đen bóng"><label class="custom-control-label" for="RadioBlack"></label><img src="assets/img/IC_BAQ.png" style="width: 50%;"></div>
+                        <div class="custom-control custom-radio custom-control-inline"><input type="radio" id="RadioGreen" class="custom-control-input" name="color" value="Xanh rêu"><label class="custom-control-label" for="RadioGreen"></label><img src="assets/img/IC_GNQ.png" style="width: 50%;"></div>
+                        <div class="custom-control custom-radio custom-control-inline"><input type="radio" id="RadioRed" class="custom-control-input" name="color" value="Đỏ rượu vang"><label class="custom-control-label" for="RadioRed"></label><img src="assets/img/IC_RET.png" style="width: 50%;"></div>
+                        <div class="custom-control custom-radio custom-control-inline"><input type="radio" id="RadioWhite" class="custom-control-input" name="color" value="Trắng Ngọc Trai-Đen"><label class="custom-control-label" for="RadioWhite"></label><img src="assets/img/IC_SIR.png" style="width: 50%;"></div>
+                    </fieldset>
+                    <p id="color-para" style="font-size: 14px;color: var(--gray);">Đen bóng<br></p>
+                </div>
+                <div>
+                    <form>
+                        <div>
+                            <fieldset>
+                                <legend style="font-size: 14px;"><strong>Chọn dịch vụ</strong><br></legend>
+                                <div class="custom-control custom-radio"><input type="radio" id="RadioBuy" class="custom-control-input" name="service" checked=""><label class="custom-control-label" for="RadioBuy" style="font-size: 14px;font-weight: 300;color: var(--gray-dark);"><strong>Mua Pin</strong><br></label></div>
+                                <div class="custom-control custom-radio"><input type="radio" id="RadioRent" class="custom-control-input" name="service"><label class="custom-control-label" for="RadioRent" style="font-size: 14px;font-weight: 300;color: var(--gray-dark);"><strong>Thuê Pin</strong><br></label></div>
+                            </fieldset>
+                        </div>
+                        <div></div>
+                    </form>
+                </div>
+                <div id="rent-display-none" name="rent-battery" style="font-size: 14px;">
+                    <hr>
+                    <fieldset>
+                        <legend style="font-size: 14px;"><strong>Chi phí vận hành hàng tháng</strong><br></legend>
+                        <div class="custom-control custom-radio"><input type="radio" id="Radio1" class="custom-control-input" name="customRadio" checked=""><label class="custom-control-label" for="Radio1"><strong>Gói thuê pin linh hoạt</strong><br></label>
+                            <div style="text-align: right;height: 0px;"><span><strong>189.000đ / tháng</strong><br><br></span></div>
+                            <p>Giới hạn không đi quá 500km/tháng<br></p>
+                        </div>
+                        <div class="custom-control custom-radio"><input type="radio" id="Radio2" class="custom-control-input" name="customRadio"><label class="custom-control-label" for="Radio2"><strong>Gói thuê pin cố định</strong><br></label>
+                            <div style="text-align: right;height: 0px;"><span><strong>350.000đ / tháng</strong><br><br><br></span></div>
+                            <p>Không giới hạn quãng đường đi<br></p>
+                        </div>
+                    </fieldset>
+                </div>
+                <div style="margin-top: 30px;">
+                    <div><label>Tỉnh thành<sup style="color: var(--red);font-size: 18px;">*</sup></label><select class="form-control" style="font-size: 14px;">
+                            <optgroup label="Lựa chọn tỉnh thành">
+                                <option value="12" selected="">Hà Nội</option>
+                                <option value="13">Hải Phòng</option>
+                                <option value="14">TP Hồ Chí Minh</option>
+                            </optgroup>
+                        </select></div>
+                    <div style="margin-top: 20px;"><label>Showroom<sup style="color: var(--red);font-size: 18px;">*</sup></label><select class="form-control" style="font-size: 14px;">
+                            <optgroup label="Lựa chọn showroom">
+                                <option value="12">Showroom 1</option>
+                                <option value="13">Showroom 2</option>
+                                <option value="14">Showroom 3</option>
+                            </optgroup>
+                        </select></div>
+                </div>
+            </form>
+            <hr>
+            <div style="height: 126px;">
+                <p>Giá xe<br></p>
+                <div style="text-align: right;margin-top: -40px;height: 0px;"><span>24.900.000đ<br><br></span></div>
+                <hr style="margin-top: 30px;background: var(--secondary);border-style: solid;">
+                <p><strong>Giá trị đơn hàng</strong><br></p>
+                <div style="text-align: right;margin-top: -40px;height: 0px;"><span><strong>24.900.000đ</strong><br><br></span>
+                    <div style="text-align: center;"><button class="btn btn-primary" type="button" style="padding-top: 5px;padding-bottom: 5px;width: 255px;">ĐẶT MUA</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="../../assets/js/jquery.min.js"></script>
     <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
@@ -316,6 +393,10 @@
     <script src="../../assets/js/Simple-Slider.js"></script>
     <script src="../../assets/js/responsiveevent.js"></script>
     <script src="../../assets/js/style.js"></script>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/feliz-buy.js"></script>
 </body>
 
 </html>
