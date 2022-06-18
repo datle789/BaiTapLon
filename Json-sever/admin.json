@@ -59,30 +59,40 @@
   ],
   "users": [
     {
-      "name": "van a",
+      "name": "van A",
       "email": "vana@gmail.com",
-      "password": "789",
       "address": "HN",
+      "title": "FELIZ S",
+      "color": "Đen bóng",
+      "battery": "thuê pin",
+      "city": "Hà Nội",
+      "showroom": "Showroom 1",
+      "total": "<strong>24.900.000đ</strong>",
       "id": 1
     },
     {
-      "id": 2,
-      "name": "văn b",
+      "name": "van b",
       "email": "vanb@gmail.com",
-      "password": "vanb",
-      "address": "NĐ"
+      "address": "HP",
+      "title": "FELIZ",
+      "color": "Xanh rêu",
+      "battery": "thuê pin",
+      "city": "Hải Phòng",
+      "showroom": "Showroom 2",
+      "total": "<strong>24.900.000đ</strong>",
+      "id": 2
     },
     {
-      "name": "abc",
-      "email": "nguyena@gmail.com",
-      "password": "789",
+      "name": "van c",
+      "email": "56789",
+      "address": "HN",
+      "title": "IMPES",
+      "color": "Đỏ rượu vang",
+      "battery": "thuê pin",
+      "city": "Hà Nội",
+      "showroom": "Showroom 3",
+      "total": "<strong>24.900.000đ</strong>",
       "id": 3
-    },
-    {
-      "name": "nguyen b",
-      "email": "nguyenb@gmail.com",
-      "password": "789",
-      "id": 4
     }
   ]
 }

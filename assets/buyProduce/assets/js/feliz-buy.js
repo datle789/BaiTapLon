@@ -4,7 +4,7 @@ let radioButtonServices = document.querySelectorAll('input[name="service"]')
 let img = document.querySelector('img[name="product-img"]')
 let rent_battery = document.querySelector('div[name="rent-battery"]')
 
-console.log(rent_battery)
+//console.log(rent_battery)
 
 for(const radioButton of radioButtons){
     radioButton.addEventListener('change', showSelected)
@@ -40,7 +40,7 @@ function showRent(e){
             rent_battery.id = "rent-display-none"
         }
         if(this.id == 'RadioRent'){
-            console.log("Rent")
+            //console.log("Rent")
             rent_battery.id = ""
         }
     }

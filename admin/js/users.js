@@ -5,7 +5,7 @@ function start() {
     getcar(render)
 
     handlecreate()
-    
+
 }
 
 start();
@@ -79,6 +79,7 @@ function handlefixcar(id) {
 function render(cars) {
     const heading = document.querySelector('.heading');
 
+
     console.log(cars)
     let htmls = cars.map((car, i) =>
         `
@@ -105,10 +106,10 @@ function handlecreate() {
         var email = document.querySelector('input[name="email"]').value;
         var password = document.querySelector('input[name="password"]').value;
 
-        if(name === "" || email === "" || password === ""){
+        if (name === "" || email === "" || password === "") {
             alert("Please enter")
-        }else{
-            add.href ="./form-success.html"
+        } else {
+            add.href = "./form-success.html"
         }
 
         var form = {
