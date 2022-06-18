@@ -5,7 +5,7 @@ function start() {
     getcar(render)
 
     adduser();
-    
+
 }
 
 start();
@@ -86,7 +86,7 @@ function render(cars) {
         <th scope="row">${i + 1}</th>
         <td>${car.name}</td>
         <td>${car.email}</td>
-        <td>${car.password}</td>
+        <td>${car.address}</td>
         <td><button onclick="handledeletecar(${car.id})">xóa</button></td>
         <td><button onclick="handlefixcar(${car.id})">sửa</button></td>
     </tr>
@@ -100,19 +100,21 @@ function render(cars) {
 
 function adduser() {
     const createbtn = document.querySelector('#add-user');
-    console.log(createbtn);
+    //console.log(createbtn);
     createbtn.onclick = () => {
         var name = document.querySelector('input[name="name"]').value;
         var email = document.querySelector('input[name="email"]').value;
-        var password = document.querySelector('input[name="password"]').value;
+        var address = document.querySelector('input[name="address"]').value;
 
         var form = {
             name: name,
             email: email,
-            password: password,
+            address: address,
         }
 
         createcar(form, () => getcar(render))
 
     }
 }
+
+
