@@ -153,7 +153,7 @@ function renderhtml(cars){
 
 
 
-function getnewcar(callback) {
+/* function getnewcar(callback) {
     fetch(newcar)
         .then(response => response.json())
         .then(callback)
@@ -219,7 +219,7 @@ function rendernewcar(cars) {
     )
 
     heading.innerHTML = htmls.join('')
-}
+} */
 
 
 
