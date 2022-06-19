@@ -63,11 +63,19 @@ function render(cars) {
         <td>${car.total}</td>
         <td><button onclick="handledeletecar(${car.id})">xóa</button></td>
     </tr>
+
+
         `
     )
 
     heading.innerHTML = htmls.join('')
+    
+    var btn = document.querySelector('.btn-car')
+    console.log(btn)
+
 }
+
+
 
 
 function handlecreate() {
@@ -80,21 +88,21 @@ function handlecreate() {
         var total = document.querySelector('#total')
 
 
-        if (name === "" || email === "" || address === "" || colorChange.value ==="") {
+        if (name === "" || email === "" || address === "" || colorChange.value === "") {
             alert("Please enter")
         } else {
             add.href = "../HTML/form-success.html"
 
         }
 
-        
+
 
         /* colors.forEach(color => {
             color.addEventListener('click',()=>{
                 colorChange.value = color.value;
             })
         }); */
-        
+
         var form = {
             name: name,
             email: email,
@@ -108,7 +116,7 @@ function handlecreate() {
         }
 
         createcar(form, () => getcar(render))
-        
+
 
     }
 }
@@ -119,7 +127,7 @@ function handlecreate() {
 var colorChange = document.querySelector("#color-change");
 var colors = document.querySelectorAll('input[name="color"]');
 colors.forEach(color => {
-    color.addEventListener('click',()=>{
+    color.addEventListener('click', () => {
         colorChange.value = color.value;
     })
 });
@@ -129,7 +137,7 @@ var batterys = document.querySelectorAll('input[name="service"]');
 
 batterys.forEach(battery => {
     service.value = battery.value;
-    battery.addEventListener('click',()=>{
+    battery.addEventListener('click', () => {
         service.value = battery.value;
     })
 })
@@ -138,14 +146,14 @@ batterys.forEach(battery => {
 var cityChange = document.querySelector("#city-change")
 var select = document.querySelector('#city');
 cityChange.value = select.value;
-select.addEventListener('change',()=>{
+select.addEventListener('change', () => {
     cityChange.value = select.value;
 })
 
 var showroomChange = document.querySelector("#showroom-change")
 var showroomselect = document.querySelector('#showroom');
 showroomChange.value = showroomselect.value;
-showroomselect.addEventListener('change',()=>{
+showroomselect.addEventListener('change', () => {
     showroomChange.value = showroomselect.value;
 })
 

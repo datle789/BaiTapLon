@@ -44,7 +44,7 @@
   font-size: 50px;
 }
 
-.text-center.div-link-item {
+.text-center.div-link-item{
   padding: 20px;
   width: 100%;
   margin-left: 5px;
@@ -79,4 +79,12 @@
 .image{
   width: 200px;
 }
+
+.div-link-item:hover{
+  background-color: rgb(106, 173, 214);
+}
+
+
+
+
 

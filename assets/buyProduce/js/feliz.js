@@ -47,7 +47,6 @@ function render(cars) {
     const heading = document.querySelector('.heading');
 
 
-    console.log(cars)
     let htmls = cars.map((car, i) =>
         `
         <tr>
@@ -63,11 +62,70 @@ function render(cars) {
         <td>${car.total}</td>
         <td><button onclick="handledeletecar(${car.id})">xóa</button></td>
     </tr>
+
         `
     )
 
     heading.innerHTML = htmls.join('')
+
 }
+
+
+/* function render(cars) {
+    const heading = document.querySelector('.heading');
+
+
+    console.log(cars)
+    let htmls = cars.map((car, i) =>
+        `
+        <tr>
+        <th scope="row">${i + 1}</th>
+        <td>${car.name}</td>
+        <td>${car.email}</td>
+        <td>${car.address}</td>
+        <td>${car.type}</td>
+        <td><button onclick="handledeletecar(${car.id})">xóa</button></td>
+        <td><button class="btn btn-primary btn-feliz">click</button></td>
+    </tr>
+
+
+    <div class="detail-feliz">
+        <div class="question">
+            <h3>${car.title}</h3>
+            <p>the number of question 30</p>
+            <button type="button" class="close">ĐÓNG</button>
+        </div>
+
+    </div>
+
+        `
+    )
+
+    heading.innerHTML = htmls.join('')
+
+    var btns = document.querySelectorAll('.btn-feliz');
+    const details = document.querySelector('.detail-feliz')
+    const close = document.querySelector('.close')
+
+    console.log(btns)
+
+    function show() {
+        details.classList.add('open')
+    }
+
+    function hide() {
+        details.classList.remove('open')
+    }
+
+    for(var btn of btns) {
+        btn.addEventListener("click", show)
+
+    }
+
+
+    close.addEventListener('click', hide)
+} */
+
 
 
 function handlecreate() {

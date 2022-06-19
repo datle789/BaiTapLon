@@ -1,15 +1,6 @@
 {
   "car": [
     {
-      "name": "KLARA S - Xanh lục",
-      "price": "39.900.000",
-      "distance": "120km",
-      "image": "klaras.png",
-      "address": "klaras.html",
-      "details": "detail-klaras.html",
-      "id": 7
-    },
-    {
       "name": "FELIZ - ĐỎ",
       "price": "24.900.000",
       "distance": "90km",
@@ -35,35 +26,62 @@
       "address": "impes.html",
       "details": "detail-impes.html",
       "id": 10
+    },
+    {
+      "name": "KLARA S - Đen",
+      "price": "39.900.000",
+      "distance": "120km",
+      "image": "klara-s-black.jpg",
+      "address": "klaras-den.html",
+      "details": "detail-klaras.html",
+      "id": 13
+    },
+    {
+      "name": "KLARA S - Xanh lục",
+      "price": "39.900.000",
+      "distance": "120km",
+      "image": "klaras.png",
+      "address": "klaras-xanhluc.html",
+      "details": "detail-klaras.html",
+      "id": 14
+    },
+    {
+      "name": "IMPES - Đỏ",
+      "price": "14.900.000",
+      "distance": "",
+      "image": "impes-red.jpg",
+      "address": "",
+      "details": "",
+      "id": 16
     }
   ],
   "newcard": [
     {
-      "name": "KLARA S (2022)",
-      "price": "36.900.000 VNĐ",
-      "distance": "194 km",
-      "image": "bike-klara-s-2022.jpg",
-      "address": "klaras.html",
+      "name": "KLARA S - Xanh lục",
+      "price": "39.900.000",
+      "distance": "120km",
+      "image": "klaras.png",
+      "address": "klaras-xanhluc.html",
       "details": "detail-klaras.html",
       "id": 1
     },
     {
-      "id": 2,
-      "name": "FELIZ S",
-      "price": "29.900.000 VNĐ",
-      "distance": "198 km",
-      "image": "bike-feliz-s.jpg",
-      "address": "feliz-s.html",
-      "details": "detail-feliz-s.html"
+      "name": "IMPES - Đỏ",
+      "price": "14.900.000",
+      "distance": "70km",
+      "image": "impes-red.jpg",
+      "address": "impes-do.html",
+      "details": "detail-impes.html",
+      "id": 2
     }
   ],
   "users": [
     {
-      "name": "van A",
-      "email": "vana@gmail.com",
+      "name": "Nguyễn Văn Hoài An",
+      "email": "0123456789",
       "address": "HN",
       "title": "FELIZ S",
-      "color": "Đen bóng",
+      "color": "Xanh rêu",
       "battery": "thuê pin",
       "city": "Hà Nội",
       "showroom": "Showroom 1",
@@ -71,28 +89,76 @@
       "id": 1
     },
     {
-      "name": "van b",
-      "email": "vanb@gmail.com",
-      "address": "HP",
+      "name": "Nguyên Gia Bảo",
+      "email": "123456789",
+      "address": "HN",
       "title": "FELIZ",
-      "color": "Xanh rêu",
+      "color": "Trắng Ngọc Trai-Đen",
       "battery": "thuê pin",
-      "city": "Hải Phòng",
+      "city": "Hà Nội",
       "showroom": "Showroom 2",
       "total": "<strong>24.900.000đ</strong>",
       "id": 2
     },
     {
-      "name": "van c",
-      "email": "56789",
-      "address": "HN",
+      "name": "Nguyễn Quang Trung",
+      "email": "123456567789",
+      "address": "Hà Nội",
+      "title": "KLARAS",
+      "color": "Đen bóng",
+      "battery": "mua pin",
+      "city": "Hà Nội",
+      "showroom": "Showroom 3",
+      "total": "<strong>25.900.000đ</strong>",
+      "id": 3
+    },
+    {
+      "name": "Nguyễn Văn A",
+      "email": "0987654321",
+      "address": "Nam Định",
+      "title": "KLARAS",
+      "color": "Trắng Ngọc Trai-Đen",
+      "battery": "thuê pin",
+      "city": "Hải Phòng",
+      "showroom": "Showroom 2",
+      "total": "<strong>25.900.000đ</strong>",
+      "id": 4
+    },
+    {
+      "name": "Nguyễn Văn B",
+      "email": "098712345456",
+      "address": "Nam Định",
+      "title": "KLARAS A2 (2011)",
+      "color": "Xanh rêu",
+      "battery": "thuê pin",
+      "city": "Hải Phòng",
+      "showroom": "Showroom 1",
+      "total": "<strong>24.900.000đ</strong>",
+      "id": 5
+    },
+    {
+      "name": "Nguyễn Văn C",
+      "email": "087923456678",
+      "address": "TP Hồ Chí Minh",
       "title": "IMPES",
       "color": "Đỏ rượu vang",
       "battery": "thuê pin",
-      "city": "Hà Nội",
+      "city": "TP Hồ Chí Minh",
       "showroom": "Showroom 3",
+      "total": "<strong>23.990.000đ</strong>",
+      "id": 6
+    },
+    {
+      "name": "Nguyễn Quang Trung",
+      "email": "123456567789",
+      "address": "Hà Nội",
+      "title": "FELIZ S",
+      "color": "Xanh rêu",
+      "battery": "mua pin",
+      "city": "Hà Nội",
+      "showroom": "Showroom 2",
       "total": "<strong>24.900.000đ</strong>",
-      "id": 3
+      "id": 7
     }
   ]
 }
