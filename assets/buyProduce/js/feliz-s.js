@@ -42,6 +42,11 @@ function handledeletecar(id) {
 }
 
 
+var key = 0;
+function keys(i){
+    key = i;
+}
+
 
 function render(cars) {
     const heading = document.querySelector('.heading');
@@ -55,13 +60,7 @@ function render(cars) {
         <td>${car.name}</td>
         <td>${car.email}</td>
         <td>${car.address}</td>
-        <td>${car.title}</td>
-        <td>${car.color}</td>
-        <td>${car.battery}</td>
-        <td>${car.city}</td>
-        <td>${car.showroom}</td>
-        <td>${car.total}</td>
-        <td><button onclick="handledeletecar(${car.id})">xóa</button></td>
+        <td><button type="button" class="button btn-primary btn-car" onclick="keys(${i})">Chi tiết</button></td>
     </tr>
 
 
@@ -70,8 +69,61 @@ function render(cars) {
 
     heading.innerHTML = htmls.join('')
     
-    var btn = document.querySelector('.btn-car')
-    console.log(btn)
+    var btns = document.querySelectorAll('.btn-car')
+    console.log(btns)
+
+    for(var btn of btns){
+        btn.addEventListener('click', ()=>{
+            var item = document.createElement('div')
+            item.className = 'details'
+            item.innerHTML = `
+            <div class="question">
+            <div style="text-align:center">
+                <h3>Đơn hàng của khách hàng: ${cars[key].name}<h3>
+            <div>
+            <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Mã</th>
+                                <th scope="col">Loại</th>
+                                <th scope="col">Màu</th>
+                                <th scope="col">Pin</th>
+                                <th scope="col">Thành phố</th>
+                                <th scope="col">Showroom</th>
+                                <th scope="col">Tổng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style='font-size:20px'>
+                            <td>2020DA${cars[key].id}</td>
+                            <td>${cars[key].title}</td>
+                            <td>${cars[key].color}</td>
+                            <td>${cars[key].battery}</td>
+                            <td>${cars[key].city}</td>
+                            <td>${cars[key].showroom}</td>
+                            <td>${cars[key].total}</td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+            <a type="button" class="close">ĐÓNG</a>
+        </div>
+            `
+
+            heading.appendChild(item)
+
+            var details = document.querySelector('.details')
+            details.classList.add('open')
+            var close = document.querySelector('.close')
+            close.addEventListener('click', ()=>{
+                details.classList.remove('open')
+                close.href = '../../admin/users.html';
+            })
+
+        })
+    }
+   
 
 }
 
@@ -89,9 +141,22 @@ function handlecreate() {
 
 
         if (name === "" || email === "" || address === "" || colorChange.value === "") {
-            alert("Please enter")
+            alert("vui lòng điền đầy đủ thông tin")
         } else {
-            add.href = "../HTML/form-success.html"
+            var form = {
+                name: name,
+                email: email,
+                address: address,
+                title: title.innerHTML,
+                color: colorChange.value,
+                battery: service.value,
+                city: cityChange.value,
+                showroom: showroomChange.value,
+                total: total.innerHTML
+            }
+    
+            createcar(form, () => getcar(render))
+            alert('Mua thành công, Vui lòng chờ thông báo')
 
         }
 
@@ -103,19 +168,6 @@ function handlecreate() {
             })
         }); */
 
-        var form = {
-            name: name,
-            email: email,
-            address: address,
-            title: title.innerHTML,
-            color: colorChange.value,
-            battery: service.value,
-            city: cityChange.value,
-            showroom: showroomChange.value,
-            total: total.innerHTML
-        }
-
-        createcar(form, () => getcar(render))
 
 
     }
