@@ -14,17 +14,20 @@ function showSelected(e){
     if(this.checked){
         color_para.textContent = `${this.value}`;
         
-        if(this.id == 'RadioBlack'){
-            img.src = `assets/img/BAQ.png`;
+        if(this.id == 'RadioSky'){
+            img.src = `assets/img/impes/BUQ.png`;
         }
-        if(this.id == 'RadioGreen'){
-            img.src = `assets/img/GNQ.png`;
+        if(this.id == 'RadioBlue'){
+            img.src = `assets/img/impes/BUR.png`;
         }
         if(this.id == 'RadioRed'){
-            img.src = `assets/img/RET.png`;
+            img.src = `assets/img/impes/RER.png`;
         }
         if(this.id == 'RadioWhite'){
-            img.src = `assets/img/WHR.png`;
+            img.src = `assets/img/impes/WHS.png`;
+        }
+        if(this.id == 'RadioSilver'){
+            img.src = `assets/img/impes/GEQ.png`;
         }
         
     }
