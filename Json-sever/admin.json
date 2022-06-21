@@ -77,18 +77,6 @@
   ],
   "users": [
     {
-      "name": "Nguyễn Văn Hoài An",
-      "email": "0123456789",
-      "address": "HN",
-      "title": "FELIZ S",
-      "color": "Xanh rêu",
-      "battery": "thuê pin",
-      "city": "Hà Nội",
-      "showroom": "Showroom 1",
-      "total": "<strong>24.900.000đ</strong>",
-      "id": 1
-    },
-    {
       "name": "Nguyên Gia Bảo",
       "email": "123456789",
       "address": "HN",
@@ -159,6 +147,30 @@
       "showroom": "Showroom 2",
       "total": "<strong>24.900.000đ</strong>",
       "id": 7
+    },
+    {
+      "name": "Nguyễn Văn Hoài An",
+      "email": "0987654321",
+      "address": "Hà Nội",
+      "title": "FELIZ",
+      "color": "Đen bóng",
+      "battery": "mua pin",
+      "city": "Hà Nội",
+      "showroom": "Showroom 2",
+      "total": "<strong>24.900.000đ</strong>",
+      "id": 8
+    },
+    {
+      "name": "Nguyễn Văn An",
+      "email": "1234545677",
+      "address": "Hải Phòng",
+      "title": "IMPES",
+      "color": "Xanh rêu",
+      "battery": "thuê pin",
+      "city": "Hải Phòng",
+      "showroom": "Showroom 3",
+      "total": "<strong>23.990.000đ</strong>",
+      "id": 9
     }
   ]
 }
