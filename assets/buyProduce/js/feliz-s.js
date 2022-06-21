@@ -83,7 +83,7 @@ function render(cars) {
             <div>
             <table class="table">
                         <thead>
-                            <tr>
+                            <tr style='font-size:20px'>
                                 <th scope="col">Mã</th>
                                 <th scope="col">Loại</th>
                                 <th scope="col">Màu</th>

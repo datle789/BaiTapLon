@@ -96,7 +96,6 @@ function render(cars) {
         <td>${car.distance}</td>
         <td><a href="../assets/buyProduce/${car.address}">${car.address}</a></td>
         <td><a href="../assets/productiondetail/${car.details}">${car.details}</a></td>
-        <td><button onclick="handledeletecar(${car.id})">xóa</button></td>
         <td><button onclick="handlefixcar(${car.id})">sửa</button></td>
     </tr>
         `

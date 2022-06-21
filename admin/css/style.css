@@ -104,6 +104,7 @@
   max-width: calc(100% - 32px);
   min-height: 200px;
   position: relative;
+  padding:20px;
 }
 
 .open{
