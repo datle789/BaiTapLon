@@ -15,16 +15,19 @@ function showSelected(e){
         color_para.textContent = `${this.value}`;
         
         if(this.id == 'RadioBlack'){
-            img.src = `assets/img/BAQ.png`;
+            img.src = `assets/img/felizs/BAQ.png`;
         }
         if(this.id == 'RadioGreen'){
-            img.src = `assets/img/GNQ.png`;
+            img.src = `assets/img/felizs/GNQ.png`;
         }
         if(this.id == 'RadioRed'){
-            img.src = `assets/img/RET.png`;
+            img.src = `assets/img/felizs/RET.png`;
         }
         if(this.id == 'RadioWhite'){
-            img.src = `assets/img/WHR.png`;
+            img.src = `assets/img/felizs/WHR.png`;
+        }
+        if(this.id == 'RadioWhite'){
+            img.src = `assets/img/felizs/SIR.png`;
         }
         
     }
