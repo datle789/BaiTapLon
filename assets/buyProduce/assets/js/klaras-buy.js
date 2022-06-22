@@ -15,16 +15,19 @@ function showSelected(e){
         color_para.textContent = `${this.value}`;
         
         if(this.id == 'RadioBlack'){
-            img.src = `assets/img/BAQ.png`;
+            img.src = `assets/img/klaras/BAR.png`;
         }
         if(this.id == 'RadioGreen'){
-            img.src = `assets/img/GNQ.png`;
+            img.src = `assets/img/klaras/GNR.png`;
         }
         if(this.id == 'RadioRed'){
-            img.src = `assets/img/RET.png`;
+            img.src = `assets/img/klaras/REQ.png`;
         }
         if(this.id == 'RadioWhite'){
-            img.src = `assets/img/WHR.png`;
+            img.src = `assets/img/klaras/WHR.png`;
+        }
+        if(this.id == 'RadioSilver'){
+            img.src = `assets/img/klaras/GEQ.png`;
         }
         
     }
@@ -38,12 +41,12 @@ function showRent(e){
     if(this.checked){
         if(this.id == 'RadioBuy'){
             //rent_battery.id = "rent-display-none"
-            total.innerHTML = `<strong>24.900.000đ</strong>`;
+            total.innerHTML = `<strong>48.500.000đ</strong>`;
         }
         if(this.id == 'RadioRent'){
             //console.log("Rent")
             //rent_battery.id = ""
-            total.innerHTML = `<strong>23.990.000đ</strong>`;
+            total.innerHTML = `<strong>39.900.000đ</strong>`;
 
         }
     }
