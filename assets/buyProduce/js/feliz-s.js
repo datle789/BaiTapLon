@@ -60,6 +60,7 @@ function render(cars) {
         <td>${car.name}</td>
         <td>${car.email}</td>
         <td>${car.address}</td>
+        <td><button onclick="handledeletecar(${car.id})">xóa</button></td>
         <td><button type="button" class="button btn-primary btn-car" onclick="keys(${i})">Chi tiết</button></td>
     </tr>
 
@@ -79,7 +80,7 @@ function render(cars) {
             item.innerHTML = `
             <div class="question">
             <div style="text-align:center">
-                <h3>Đơn hàng của khách hàng: ${cars[key].name}<h3>
+                <h3 style="padding-bottom:40px;">Đơn hàng của khách hàng: ${cars[key].name}<h3>
             <div>
             <table class="table">
                         <thead>

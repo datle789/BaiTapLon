@@ -81,6 +81,12 @@ function handlefixcar(id) {
 }
 
 
+var key = 0;
+function keys(i){
+    key = i;
+    console.log(key)
+}
+
 
 function render(cars) {
     const heading = document.querySelector('.heading');
@@ -97,11 +103,32 @@ function render(cars) {
         <td><a href="../assets/buyProduce/${car.address}">${car.address}</a></td>
         <td><a href="../assets/productiondetail/${car.details}">${car.details}</a></td>
         <td><button onclick="handlefixcar(${car.id})">sửa</button></td>
+        <td><button class="btninfo" onclick="keys(${i})">hiển thị</button></td>
     </tr>
         `
     )
 
     heading.innerHTML = htmls.join('')
+
+    var btninfo = document.querySelectorAll('.btninfo')
+    for(var btn of btninfo){
+        var name = document.querySelector('input[name="name"]');
+        var price = document.querySelector('input[name="price"]');
+        var img = document.querySelector('input[name="image"]');
+        var distance = document.querySelector('input[name="distance"]');
+        var address = document.querySelector('input[name="address"]');
+        var details = document.querySelector('input[name="details"]');
+        btn.addEventListener('click',()=>{
+            name.value = cars[key].name;
+            price.value = cars[key].price;
+            img.value = cars[key].image;
+            distance.value = cars[key].distance;
+            address.value = cars[key].address;
+            details.value = cars[key].details;
+        })
+    }
+
+
 }
 
 

@@ -65,26 +65,32 @@ function handlefixcar(id) {
     console.log(price)
     var distance = document.querySelector('input[name="distance"]').value;
     var image = document.querySelector('input[name="image"]').value;
-    var address = document.querySelector('input[name="address"]').value;
-    var details = document.querySelector('input[name="details"]').value;
+    /* var address = document.querySelector('input[name="address"]').value;
+    var details = document.querySelector('input[name="details"]').value; */
 
     var form = {
         name: name,
         price: price,
         distance: distance,
         image: image,
-        address: address,
-        details: details
+        /* address: address,
+        details: details */
     }
     fixcar(form, id)
 
+}
+
+var key = 0;
+function keys(i){
+    key = i;
+    console.log(key)
 }
 
 
 
 function render(cars) {
     const heading = document.querySelector('.heading');
-
+    
     console.log(cars)
     let htmls = cars.map((car,i) =>
         `
@@ -97,6 +103,7 @@ function render(cars) {
         
         <td><button onclick="handledeletecar(${car.id})">xóa</button></td>
         <td><button onclick="handlefixcar(${car.id})">sửa</button></td>
+        <td><button class="btninfo" onclick="keys(${i})">hiển thị</button></td>
     </tr>
         `
     )
@@ -105,17 +112,33 @@ function render(cars) {
     <td><a href="../assets/productiondetail/${car.details}">${car.details}</a></td> */}
 
     heading.innerHTML = htmls.join('')
+
+    var btninfo = document.querySelectorAll('.btninfo')
+    for(var btn of btninfo){
+        var name = document.querySelector('input[name="name"]');
+        var price = document.querySelector('input[name="price"]');
+        var img = document.querySelector('input[name="image"]');
+        var distance = document.querySelector('input[name="distance"]');
+        btn.addEventListener('click',()=>{
+            name.value = cars[key].name;
+            price.value = cars[key].price;
+            img.value = cars[key].image;
+            distance.value = cars[key].distance;
+
+        })
+    }
+
 }
+
+
 
 
 
 function handlecreate() {
     const createbtn = document.querySelector('#create');
-    createbtn.onclick = () => {
+   /*  createbtn.onclick = () => {
         var name = document.querySelector('input[name="name"]').value;
-        console.log(name)
         var price = document.querySelector('input[name="price"]').value;
-        console.log(price)
         var distance = document.querySelector('input[name="distance"]').value;
         var image = document.querySelector('input[name="image"]').value;
         var address = document.querySelector('input[name="address"]').value;
@@ -130,6 +153,20 @@ function handlecreate() {
         }
 
         createcar(form, () => getcar(render))
+        
 
+    }*/
+    createbtn.onclick = () =>{
+        var name = document.querySelector('input[name="name"]').value;
+        var price = document.querySelector('input[name="price"]').value;
+        var distance = document.querySelector('input[name="distance"]').value;
+        var image = document.querySelector('input[name="image"]').value;
+        var form = {
+            name: name,
+            price: price,
+            distance: distance,
+            image: image,
+        }
+        createcar(form, () => getcar(render))
     }
 }

@@ -43,7 +43,7 @@ function showRent(e){
         if(this.id == 'RadioRent'){
             //console.log("Rent")
             //rent_battery.id = ""
-            total.innerHTML = `<strong>26.500.000đ</strong>`;
+            total.innerHTML = `<strong>26.200.000đ</strong>`;
 
         }
     }
