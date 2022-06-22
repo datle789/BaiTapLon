@@ -38,12 +38,12 @@ function showRent(e){
     if(this.checked){
         if(this.id == 'RadioBuy'){
             //rent_battery.id = "rent-display-none"
-            total.innerHTML = `<strong>24.900.000đ</strong>`;
+            total.innerHTML = `<strong>26.900.000đ</strong>`;
         }
         if(this.id == 'RadioRent'){
             //console.log("Rent")
             //rent_battery.id = ""
-            total.innerHTML = `<strong>23.990.000đ</strong>`;
+            total.innerHTML = `<strong>26.500.000đ</strong>`;
 
         }
     }
